@@ -1,5 +1,8 @@
 import "./App.css";
-import { Component } from "./components/component";
+import { UseCallbackComponent } from "./components/UseCallbackComponent";
+import { UseCustomhookComponent } from "./components/UseCustomComponent";
+import { UseEffectComponent } from "./components/UseEffectComponent";
+import { UseMemoComponent } from "./components/UseMemoComponent";
 import { UseRefComponent } from "./components/UseRefComponent";
 import { UserReducerComponent } from "./components/UserReducerComponent";
 import { UseStateComponent } from "./components/UseStateComponent";
@@ -26,13 +29,16 @@ function App() {
       <UserReducerComponent />
 
       {/* useEffect hook */}
-      <Component />
+      <UseEffectComponent />
 
       {/* useMemo hook */}
+      <UseMemoComponent />
 
       {/* useCallback hook */}
+      <UseCallbackComponent />
 
       {/* useCustom hook */}
+      <UseCustomhookComponent />
     </>
   );
 }
