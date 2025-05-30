@@ -6,7 +6,7 @@ export const MenuPage = () => {
   return (
     <MainLayout>
       <SubLayout>
-        <div>MenuPage</div>
+        <h3>오늘의식단</h3>
       </SubLayout>
     </MainLayout>
   );

@@ -6,7 +6,7 @@ export const QnaPage = () => {
   return (
     <MainLayout>
       <SubLayout>
-        <div>QnaPage</div>
+        <h3>고객문의</h3>
       </SubLayout>
     </MainLayout>
   );

@@ -6,7 +6,7 @@ export const InfoPage = () => {
   return (
     <MainLayout>
       <SubLayout>
-        <div>infoPage</div>
+        <h3>이벤트</h3>
       </SubLayout>
     </MainLayout>
   );

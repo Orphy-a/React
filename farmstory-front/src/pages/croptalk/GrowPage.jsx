@@ -6,7 +6,7 @@ export const GrowPage = () => {
   return (
     <MainLayout>
       <SubLayout>
-        <div>텃밭가꾸기</div>
+        <h3>텃밭가꾸기</h3>
       </SubLayout>
     </MainLayout>
   );

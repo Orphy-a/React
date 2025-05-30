@@ -6,7 +6,7 @@ export const NoticePage = () => {
   return (
     <MainLayout>
       <SubLayout>
-        <div>NoticePage</div>
+        <h3>공지사항</h3>
       </SubLayout>
     </MainLayout>
   );

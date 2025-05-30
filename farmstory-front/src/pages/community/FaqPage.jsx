@@ -6,7 +6,7 @@ export const FaqPage = () => {
   return (
     <MainLayout>
       <SubLayout>
-        <div>FaqPage</div>
+        <h3>자주묻는질문</h3>
       </SubLayout>
     </MainLayout>
   );

@@ -6,7 +6,7 @@ export const ChefPage = () => {
   return (
     <MainLayout>
       <SubLayout>
-        <div>ChefPage</div>
+        <h3>나도요리사</h3>
       </SubLayout>
     </MainLayout>
   );

@@ -6,7 +6,7 @@ export const StoryPage = () => {
   return (
     <MainLayout>
       <SubLayout>
-        <div>농작물이야기</div>
+        <h3>농작물이야기</h3>
       </SubLayout>
     </MainLayout>
   );
