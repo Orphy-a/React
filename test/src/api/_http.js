@@ -10,3 +10,8 @@ export const USER_LOGOUT = `${SERVER_HOST}/user/logout`;
 export const ARTICLE_WRITE = `${SERVER_HOST}/article`;
 export const ARTICLE_LIST = `${SERVER_HOST}/article`;
 export const ARTICLE_VIEW = `${SERVER_HOST}/article`;
+
+// product
+export const PRODUCT_REGISTER = `${SERVER_HOST}/product`;
+export const PRODUCT_LIST = `${SERVER_HOST}/product`;
+export const PRODUCT_THUMB = `${SERVER_HOST}/product/thumb`;

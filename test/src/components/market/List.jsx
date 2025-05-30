@@ -3,8 +3,9 @@ import useCates from "../../hooks/useCates";
 import { useSearchParams } from "react-router-dom";
 import { getProductAll } from "../../api/productAPI";
 import ListItem from "./ListItem";
+import Sort from "./Sort";
 
-const list = () => {
+const List = () => {
   const initState = {
     dtoList: [],
     cate: null,
@@ -17,35 +18,27 @@ const list = () => {
     next: false,
   };
 
-  const list = () => {
-    const [cate1, cate2] = useCates();
-
-    const [serverData, setServerData] = useState(initState);
-
-    const [queryParams] = useSearchParams();
-
-    const pg = queryParams.get("pg") || 1;
-  };
+  const [cate1, cate2] = useCates();
+  const [serverData, setServerData] = useState(initState);
+  const [queryParams] = useSearchParams();
+  const pg = queryParams.get("pg") || 1;
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const data = await getProductAll(pg);
         console.log(data);
-
-        // 상태 초기화
         setServerData(data);
       } catch (err) {
         console.log(err);
       }
     };
-
     fetchData();
   }, [pg]);
 
   return (
     <>
-      <Sorting />
+      <Sort />
 
       <table border="0">
         <thead>
@@ -64,10 +57,8 @@ const list = () => {
           ))}
         </tbody>
       </table>
-
-      <Paging serverData={serverData} />
     </>
   );
 };
 
-export default list;
+export default List;
